@@ -1,0 +1,33 @@
+<div class="container" (window:deviceorientation)="deviceorientation($event)">
+    <div class="row">
+        <div class="col-xs-12">
+            <ffctrl-header [title]="title"></ffctrl-header>
+        </div>
+    </div>
+    <div class="row row-padding">
+        <div class="col-xs-12">
+            <input #slider (input)="slidervalue(slider.value)" [value]="throttle" type="range" orient="vertical"
+                   min="0"
+                   max="255">
+        </div>
+    </div>
+    <div class="row row-padding">
+        <div class="col-xs-12">
+            <button class="btn btn-default btn-block" (click)="switchmode()">{{mode}}</button>
+        </div>
+    </div>
+    <div class="row row-padding">
+        <div class="col-xs-12">
+            <a class="btn btn-default btn-block" routerLink="/exit" routerLinkeActive="active">Exit</a>
+        </div>
+    </div>
+    <div class="row row-padding">
+        <div class="col-xs-4">throttle:</div>
+        <div class="col-xs-8">{{throttle}}</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <deviceorientation-info></deviceorientation-info>
+        </div>
+    </div>
+</div>
