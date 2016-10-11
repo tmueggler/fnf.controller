@@ -3,7 +3,7 @@ import {Router} from "express";
 import {RegistrationService} from "./RegistrationService";
 
 const PORT = 50005;
-const TIMEOUT_MS_TOKEN = 5000;
+const TIMEOUT_MS_TOKEN = 60 * 60 * 1000;
 
 const PARAM_NEWTOKEN = 'newtoken';
 const PARAM_TOKEN = 'token';
@@ -55,7 +55,7 @@ api.post(`/start/:${PARAM_TOKEN}/:name/`, (req, res)=> {
 //
 api.post(`/throttle/:${PARAM_TOKEN}/:throttle/`, (req, res)=> {
     let throttle = req.params[PARAM_THROTTLE];
-    // TODO
+    console.log(`THROTTLE: ${throttle}`)
     res.end();
 });
 
