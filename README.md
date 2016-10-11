@@ -7,13 +7,19 @@
 * Run `tsc` before `npm start` is run.
 
 ###  client-webapp
-* Add how to to welcome screen.
+* Use token generated in the backend.
+* Display reason if registration fails.
+* Add 'How To' to welcome screen.
+* Add 'Name' input on welcome screen.
 * Enlarge buttons.
 * Add configuration for backend endpoint and so forth.
 * Package with `webpack`.
 
 ### server-webapp
+* Generate token in the backend.
 * Finish and test token single client access.
+* Show drivers name.
+* (Show drivers current stats.)
 * Integrate with [fnf.clients/node](https://github.com/FastAndFurious/fnf.clients) node api.
 * Add configuration for backend endpoint and so forth.
 * Package with `webpack`.
