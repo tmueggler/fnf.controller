@@ -2,7 +2,8 @@
   "name": "fastandfurious-controller-server",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "postinstall": "typings install",
+    "start": "tsc && node server.js",
     "typings": "typings",
     "tsc": "tsc"
   },
