@@ -9,8 +9,9 @@ import {WelcomeComponent} from "./welcome.component";
 import {ControllerComponent} from "./controller.component";
 import {ExitComponent} from "./exit.component";
 import {DeviceOrientationInfoComponent} from "./deviceorientationinfo.component";
-//
+import {APP_CONFIG, CONFIGURATION} from "./app.config";
 import {RegistrationService} from "./registration.service";
+import {TokenHolder} from "./tokenholder";
 
 @NgModule({
     imports: [
@@ -28,8 +29,10 @@ import {RegistrationService} from "./registration.service";
         DeviceOrientationInfoComponent
     ],
     providers: [
+        {provide: APP_CONFIG, useValue: CONFIGURATION},
         routingProviders,
-        RegistrationService
+        RegistrationService,
+        TokenHolder
     ],
     bootstrap: [ControllerApp]
 })

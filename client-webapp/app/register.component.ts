@@ -26,7 +26,7 @@ export class RegisterComponent implements OnInit {
                     ()=> {
                         this.router.navigate(['/welcome']);
                     },
-                    5000);
+                    1000);
             },
             ()=> {
                 this.title = 'Registration Failed';
