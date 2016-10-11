@@ -1,10 +1,27 @@
 # FastAndFurious Mobile Controller
 
+## How to Run
+
+### backend-server
+* `> cd backend-server`
+* `> npm install` (Only the first time)
+* `> npm start`
+
+### client-webapp
+* `> cd client-webapp`
+* `> npm install` (Only the first time)
+* `> npm start`
+
+### server-webapp
+* `> cd server-webapp`
+* `> npm install` (Only the first time)
+* `> npm start`
+
 ## TODO
 
 ### backend-server
-* Run `typings` when `npm install` is run.
-* Run `tsc` before `npm start` is run.
+* (Done) Run `typings` when `npm install` is run.
+* (Done) Run `tsc` before `npm start` is run.
 
 ###  client-webapp
 * Use token generated in the backend.
